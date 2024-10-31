@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'sans-serif';
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    margin-bottom: 30px;
+    background-color: rgb(65, 65, 233);
+    color: #fff;
+}
+
+header li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobreLoja img{
+    max-width: 400px;
+    margin-right: 24px;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.438);
+}
+
+#sobreLoja h2 {
+    max-width: 100%;
+    padding: 20px 0;
+    border-bottom: 3px solid rgb(65, 65, 233);
+    color: rgb(54, 54, 153);
+    font-style: italic;
+}
+
+#sobreLoja p {
+    margin-top: 50px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    max-width: 100%;
+    padding: 20px 0;
+    border-bottom: 3px solid rgb(65, 65, 233);
+    color: rgb(54, 54, 153);
+    font-style: italic;
+}
+
+.listaNike li {
+    list-style: none;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.listaNike li img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 8px;
+}
+
+.listaNike {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding-top: 40px;
+}
+
+.listaNike p {
+    margin-top: 6px;
+}
+
+.price {
+    padding-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+#produtosNike button {
+    background-color: rgb(65, 65, 233);
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    .container {
+        max-width: 90%;
+        max-width: 600px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    #sobreLoja .container-flex{
+        display: block;
+        width: 100%;
+        
+    }
+
+    #sobreLoja img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    #sobreLoja h2 {
+        margin-top: 20px;
+    }
+    
+    #sobreLoja p {
+        margin-top: 25px;
+    }
+
+    .listaNike {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    header {
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header li {
+        display: block;
+    }
+    
+    #sobreLoja .container-flex{
+        display: block;
+        width: 100%;
+        
+    }
+
+    #sobreLoja img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    #sobreLoja h2 {
+        margin-top: 20px;
+    }
+    
+    #sobreLoja p {
+        margin-top: 25px;
+    }
+
+    .listaNike {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
